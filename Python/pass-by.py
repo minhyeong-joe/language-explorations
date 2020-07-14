@@ -62,3 +62,20 @@ obj = MyObj()
 print("Before Function Call: " + str(obj.getData()))
 addObj(obj)
 print("After Function Call: " + str(obj.getData()))
+
+'''
+Output:
+
+Before Function Call: 0
+Inside Function: 1
+After Function Call: 0
+Before Function Call: hello
+Inside Function: hello world
+After Function Call: hello
+Before Function Call: [0, 1, 2]
+Inside Function: [1, 2, 3]
+After Function Call: [1, 2, 3]
+Before Function Call: 0
+Inside Function: 1
+After Function Call: 1
+'''

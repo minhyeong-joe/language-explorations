@@ -123,3 +123,21 @@ void passArrayPointer(int *arr, int size)
     }
     cout << "]" << endl;
 }
+
+/**
+Output:
+
+Initial Value: 1
+Inside Pass By Value: 2
+After Pass By Value: 1
+Inside Pass By Reference: 2
+After Pass By Reference: 2
+Inside Pass By Const Reference: 2
+After Pass By Const Reference: 2
+
+Initial Array: [1, 2, 3]
+Inside Pass By Value: [2, 3, 4]
+After Pass By Value: [2, 3, 4]
+Inside Pass By Reference: [3, 4, 5]
+After Pass By Value: [3, 4, 5]
+*/
