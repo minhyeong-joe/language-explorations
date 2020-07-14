@@ -1,0 +1,8 @@
+# vscode
+.vscode
+
+# executable from g++
+*.exe
+
+# pycache
+*.pyc
