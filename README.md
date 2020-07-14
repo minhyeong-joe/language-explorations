@@ -42,12 +42,13 @@ ROOT
 *Needs refactors/re-ordering after more contents are added*
 
 - [Pass By Value vs Reference](#pass-by-value-vs-reference)
-- For Loops
+- [For Loops](#for-loops)
 - Higher-Order For Loops
 - Access Modifiers
 - Generic Types
 - Arrays (may need further breakdowns?)
 - Strings (may need further breakdowns?)
+- Object Comparison
 
     ... More to Come
 
@@ -59,13 +60,79 @@ ROOT
 
     C++ passes arguments by both value and reference, and the programmer has the freedom to make a choice based on the requirement.
 
-    [Example C++](CPP/pass-by.cpp)
+    [C++ Example](CPP/pass-by.cpp)
 
 - **Java/ Python/ Javascript**
 
     Uses pass-by-value, but when passing an object, the reference to the object is passed as value, allowing the object mutation. (This is also called as `pass-by-object-reference`)
 
-    [Example Python](Python/pass-by.py)
+    [Python Example](Python/pass-by.py)
+
+[**Back to Top**](#navigation)
+
+---
+
+## For Loops
+
+- **C++ / Java**
+
+    Basic Counter Loop (Index-based):
+    ```c++
+    for (int i = 0; i < sizeOfIterable; i++) {
+        // code to play with iterable[i]
+    }
+    ```
+    Range-based Loop (Element-based):
+    ```c++
+    // In C++, auto can be used to let compiler determine the type based on the iterable
+    for (auto element : iterable) {
+        // code to play with each element directly
+    }
+    ```
+
+- **Python**
+
+    Basic Counter Loop (Index-based):
+    ```python
+    for i in range(len(iterable)):
+        print(iterable[i])
+    # range(start, end, step)
+    # returns list of numbers from <start>(inclusive) to <end>(exclusive) with <step> increment
+    ```
+
+    Range-based Loop (Element-based):
+    ```python
+    for elem in iterable:
+        print(elem)
+    
+    # also able to unpack tuple (multiple returns)
+    for key, value in dict.items():
+        print("key: {0}, value: {1}".format(key, value))
+    # by convention, unpack unnecessary value with "_"
+    for a, b, c, _ in tuple:
+        print(a + b + c)
+    ```
+
+- **Javascript**
+
+    Basic counter Loop (Index-based):
+    ```javascript
+    for (let i = 0; i < iterable.length; i++) {
+        console.log(iterable[i])
+    }
+    // Caution: unlike Java or Python, below syntax (for...in...) uses index, not element.
+    for (let i in iterable) {
+        console.log(iterable[i])
+    }
+    ```
+    Range-based Loop (Element-based):
+    ```javascript
+    // Unlike Java or Python, uses for...of...
+    // for...in... is used to fetch index not element
+    for (let element of iterable) {
+        console.log(element)
+    }
+    ```
 
 [**Back to Top**](#navigation)
 
