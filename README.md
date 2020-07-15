@@ -130,6 +130,13 @@ ROOT
         print(a + b + c)
     ```
 
+    Enumeration:
+    ```python
+    # using enumerate() to access both index and value
+    for index, value in enumerate(arr):
+        print(index, value)
+    ```
+
     [Python Example](Python/for-loop.py)
 
 - **Javascript**
