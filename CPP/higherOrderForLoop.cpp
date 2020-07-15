@@ -11,7 +11,7 @@
 #include <vector>
 #include <algorithm>
 #include <numeric>
-#include <execution>
+// #include <execution>
 using namespace std;
 
 template <typename T>
@@ -45,17 +45,18 @@ int main(int argc, char const *argv[])
     });
     cout << "Difference: " << acc << endl;
 
-    // using reduce
-    acc = reduce(execution::par, list.cbegin(), list.cend(), 0, [](auto a, auto b) {
-        return a + b;
-    });
-    cout << "Sum: " << acc << endl;
+    // <execution> requires tbb
+    // // using reduce
+    // acc = reduce(execution::par, list.cbegin(), list.cend(), 0, [](auto a, auto b) {
+    //     return a + b;
+    // });
+    // cout << "Sum: " << acc << endl;
 
-    // using parallism on subtraction
-    acc = reduce(execution::par, list.cbegin(), list.cend(), 0, [](auto a, auto b) {
-        return a - b;
-    });
-    cout << "Incorrect Difference: " << acc << endl;
+    // // using parallism on subtraction
+    // acc = reduce(execution::par, list.cbegin(), list.cend(), 0, [](auto a, auto b) {
+    //     return a - b;
+    // });
+    // cout << "Incorrect Difference: " << acc << endl;
 
     return 0;
 }

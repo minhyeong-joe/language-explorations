@@ -44,11 +44,12 @@ ROOT
 - [Fundamentals](#fundamentals) *(Syntax/Features)*
     - [For Loops](#for-loops)
     - [Higher-Order For Loops](#higher-order-for-loops)
-    - Arrays
+    - [Arrays](#arrays)
     - Strings
     - Generic Types
     - Object Comparison
     - Operator Overloading
+    - Exceptions
 
 - [Built-in Data Structures](#built-in-data-structures)
     - Dynamic-sized Array
@@ -189,6 +190,8 @@ ROOT
     - `accumulate`: reduce, sequential only (slower, but in order)
     - `reduce`: reduce, parallelism allowed (faster, but incorrect in non-associate or non-commutative operations like subtract, divide, etc)
 
+        *reduce's advantage execution policy requires tbb dependency*
+
     [higherOrderForLoop.cpp](CPP/higherOrderForLoop.cpp)
 
 - **Java**
@@ -229,6 +232,53 @@ ROOT
     [MDN Array Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
     [Javascript Example](Javascript/higherOrderForLoop.js)
+
+[**Back to Top**](#navigation)
+
+---
+
+## Arrays
+
+Array is a collection, or a list, of items.
+
+- **C++**
+
+    - static size: size needed at compile time
+    - "items" must be of the same type
+    - No warning for out of range (simply access/modify the data in that memory block)
+    - Not really an object, merely placed in contiguous memory blocks
+
+    [CPP Example](CPP/Array.cpp)
+
+- **Java**
+
+    - static size: size needed at compile time
+    - "items" must be of the same type
+    - Throws `ArrayIndexOutOfBoundsException` when trying to access beyond initial size
+    - `java.util.Arrays` provides array methods
+
+    [Java Example](Java/Array.java)
+
+- **Python**
+    
+    Provides [array module](https://docs.python.org/3/library/array.html): single datatype + dynamic size + array methods
+
+    But generally utilizes `list` - a much more flexible option
+
+    - dynamic size
+    - allow different datatypes
+    - list slicing (ex. `list[2:5]`)
+    - list comprehension (ex. `[x for x in list if x > 5]`)
+    - list methods (ex. `append()`, `insert()`, `extend()`, `pop()`, `remove()`, `sort()`, `reverse()`, etc)
+
+    [Python Exampe](Python/Array.py)
+
+- **Javascript**
+
+    - dynamic size
+    - allow different datatypes
+    - array methods (ex. `push()`, `pop()`, `slice()`, `unshift()`, `sort()`, etc)  
+    - Similar to Python's list, so no separate example
 
 [**Back to Top**](#navigation)
 
