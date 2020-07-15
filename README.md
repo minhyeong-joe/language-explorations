@@ -49,6 +49,9 @@ ROOT
 - Arrays (may need further breakdowns?)
 - Strings (may need further breakdowns?)
 - Object Comparison
+- Inheritance
+- Encapsulation
+- Polymorphism
 
     ... More to Come
 
@@ -76,6 +79,8 @@ ROOT
 
 - **C++ / Java**
 
+    *for (`type` `name` : `iterable`)*
+
     Basic Counter Loop (Index-based):
     ```c++
     for (int i = 0; i < sizeOfIterable; i++) {
@@ -85,12 +90,20 @@ ROOT
     Range-based Loop (Element-based):
     ```c++
     // In C++, auto can be used to let compiler determine the type based on the iterable
-    for (auto element : iterable) {
-        // code to play with each element directly
+    for (auto value : iterable) {
+        // code to play with each value directly
     }
     ```
 
+    [Java Example](Java/ForLoops.java)
+
 - **Python**
+
+    *for `name` in `iterable`*
+
+    **Technically, Python does not have counter-based for-loop**
+
+    *But combined with range(), which returns list of numbers, we can achieve basic counter loop as below*
 
     Basic Counter Loop (Index-based):
     ```python
@@ -113,22 +126,26 @@ ROOT
         print(a + b + c)
     ```
 
+    [Python Example](Python/for-loop.py)
+
 - **Javascript**
+
+    *for (let `name` in `iterable`)*
+    
+    *for (let `name` of `iterable`)*
 
     Basic counter Loop (Index-based):
     ```javascript
     for (let i = 0; i < iterable.length; i++) {
         console.log(iterable[i])
     }
-    // Caution: unlike Java or Python, below syntax (for...in...) uses index, not element.
+    // Caution: unlike Python, below syntax (for...in...) accesses index, not values.
     for (let i in iterable) {
         console.log(iterable[i])
     }
     ```
     Range-based Loop (Element-based):
     ```javascript
-    // Unlike Java or Python, uses for...of...
-    // for...in... is used to fetch index not element
     for (let element of iterable) {
         console.log(element)
     }
