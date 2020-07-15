@@ -43,7 +43,7 @@ ROOT
 
 - [Fundamentals](#fundamentals) *(Syntax/Features)*
     - [For Loops](#for-loops)
-    - Higher-Order For Loops
+    - [Higher-Order For Loops](#higher-order-for-loops)
     - Arrays
     - Strings
     - Generic Types
@@ -161,6 +161,74 @@ ROOT
         console.log(element)
     }
     ```
+
+[**Back to Top**](#navigation)
+
+---
+
+## Higher-Order For Loops
+
+**Some Common Higher-Order For Loops:**
+
+**FOR EACH:** generally used to access each element (equivalent to range-based for-loop)
+
+**MAP:** perform an operation on each element (modification)
+
+**FILTER:** returns subset of elements that satisfy condition
+
+**REDUCE:** computes a result by iterating over elements
+
+- **C++**
+
+    C++'s `<algorithm>` library includes following:
+    - `transform`: equivalent to map.
+    - `copy_if`: filter and create new copied list.
+    - `remove_if`: filter and remove elements in place.
+
+    `<numeric>` library:
+    - `accumulate`: reduce, sequential only (slower, but in order)
+    - `reduce`: reduce, parallelism allowed (faster, but incorrect in non-associate or non-commutative operations like subtract, divide, etc)
+
+    [higherOrderForLoop.cpp](CPP/higherOrderForLoop.cpp)
+
+- **Java**
+
+    Java's `Stream` Object has methods:
+    - `map`: `Stream.map(element -> do_something)`
+    - `filter`: `Stream.filter(element -> some_condition)`
+    - `sum`: `Stream.sum()`
+    - `average`: `Stream.average()`
+    - `count`: `Stream.count()`
+    - `reduce`: `Stream.reduce(accumulator, function(current, next))`
+    
+    `Java.util.Collection` has `stream` method to convert `Collection` to `Stream`,
+
+    and `Arrays` class has `stream` method to convert any array into `Stream`
+
+    [HigherOrderForLoop.java](Java/HigherOrderForLoop.java)
+
+- **Python**
+
+    Python has built-in higher-order functions:
+    - `map(function, list)`
+    - `filter(function, list)`
+    - `reduce(function, list, accumulator)`
+
+    [higherOrderForLoop.py](Python/higherOrderForLoop.py)
+
+- **Javascript**
+
+    Javascript's higher-order functions include:
+    - `forEach(function(element[, index[, array]]))`: returns `undefined`. In-place, so **generally** not used for modification.
+    - `map(function(element[, index[, array]]))`: returns new list after the transformation
+    - `filter(function(element[, index[, array]]))`: returns new list that satisfy conditions
+    - `reduce(function(accumulator, element[, index[, array]]), initialAccValue)`: returns the accumulated result
+    
+    and much more like: `find()`, `every()`, `some()`, `includes()`, `findIndex()`, etc.
+
+    [MDN Array Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+    [Javascript Example](Javascript/higherOrderForLoop.js)
 
 [**Back to Top**](#navigation)
 
