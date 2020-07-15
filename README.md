@@ -41,19 +41,129 @@ ROOT
 
 *Needs refactors/re-ordering after more contents are added*
 
-- [Pass By Value vs Reference](#pass-by-value-vs-reference)
-- [For Loops](#for-loops)
-- Higher-Order For Loops
-- Access Modifiers
-- Generic Types
-- Arrays (may need further breakdowns?)
-- Strings (may need further breakdowns?)
-- Object Comparison
-- Inheritance
-- Encapsulation
-- Polymorphism
+- [Fundamentals](#fundamentals) *(Syntax/Features)*
+    - [For Loops](#for-loops)
+    - Higher-Order For Loops
+    - Arrays
+    - Strings
+    - Generic Types
+    - Object Comparison
+    - Operator Overloading
+
+- [Built-in Data Structures](#built-in-data-structures)
+    - Dynamic-sized Array
+    - Set
+    - Stack
+    - Queue
+    - Map/Dictionary
+    - Hashtable
+
+- [Procedural](#procedural)
+    - [Pass By Value vs Reference](#pass-by-value-vs-reference)
+    - Lambda Functions
+    - Callback Functions
+    - Default Parameters
+    - Function Overloading
+
+- [Object-Oriented](#object-oriented)
+    - Access Modifiers
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
 
     ... More to Come
+
+---
+
+## Fundamentals
+
+---
+
+## For Loops
+
+- **C++ / Java**
+
+    *for (`type` `name` : `iterable`)*
+
+    Basic Counter Loop (Index-based):
+    ```c++
+    for (int i = 0; i < sizeOfIterable; i++) {
+        // code to play with iterable[i]
+    }
+    ```
+    Range-based Loop (Element-based):
+    ```c++
+    // In C++, auto can be used to let compiler determine the type based on the iterable
+    for (auto value : iterable) {
+        // code to play with each value directly
+    }
+    ```
+
+    [Java Example](Java/ForLoops.java)
+
+- **Python**
+
+    *for `name` in `iterable`*
+
+    **Technically, Python does not have counter-based for-loop**
+
+    *But combined with range(), which returns list of numbers, we can achieve basic counter loop as below*
+
+    Basic Counter Loop (Index-based):
+    ```python
+    for i in range(len(iterable)):
+        print(iterable[i])
+    # range(start, end, step)
+    # returns list of numbers from <start>(inclusive) to <end>(exclusive) with <step> increment
+    ```
+
+    Range-based Loop (Element-based):
+    ```python
+    for elem in iterable:
+        print(elem)
+    
+    # also able to unpack tuple (multiple returns)
+    for key, value in dict.items():
+        print("key: {0}, value: {1}".format(key, value))
+    # by convention, unpack unnecessary value with "_"
+    for a, b, c, _ in tuple:
+        print(a + b + c)
+    ```
+
+    [Python Example](Python/for-loop.py)
+
+- **Javascript**
+
+    *for (let `name` in `iterable`)*
+    
+    *for (let `name` of `iterable`)*
+
+    Basic counter Loop (Index-based):
+    ```javascript
+    for (let i = 0; i < iterable.length; i++) {
+        console.log(iterable[i])
+    }
+    // Caution: unlike Python, below syntax (for...in...) accesses index, not values.
+    for (let i in iterable) {
+        console.log(iterable[i])
+    }
+    ```
+    Range-based Loop (Element-based):
+    ```javascript
+    for (let element of iterable) {
+        console.log(element)
+    }
+    ```
+
+[**Back to Top**](#navigation)
+
+---
+
+## Built-in Data Structures
+
+---
+
+## Procedural
 
 ---
 
@@ -152,5 +262,9 @@ ROOT
     ```
 
 [**Back to Top**](#navigation)
+
+---
+
+## Object-Oriented
 
 ---
