@@ -45,9 +45,8 @@ ROOT
     - [For Loops](#for-loops)
     - [Higher-Order For Loops](#higher-order-for-loops)
     - [Arrays](#arrays)
-    - Strings
+    - [Strings](#strings)
     - Generic Types
-    - Object Comparison
     - Operator Overloading
     - Exceptions
 
@@ -279,6 +278,29 @@ Array is a collection, or a list, of items.
     - allow different datatypes
     - array methods (ex. `push()`, `pop()`, `slice()`, `unshift()`, `sort()`, etc)  
     - Similar to Python's list, so no separate example
+
+[**Back to Top**](#navigation)
+
+---
+
+## Strings
+
+- **C++**
+
+    - C-string is array of chars delimited by `\0` (or pointer to contiguous block of chars) `char str[5]` or `char* str`
+    - string STL is commonly used instead.
+    - string is simply a safe wrapper for C-string, so is mutable.
+    - string library overloads `+` as concatenation and provides useful methods.
+
+    [CPP Example](CPP/Strings.cpp)
+
+- **Java / Python / Javascript**
+
+    - Immutable, any modifications create a new instance.
+    - (Java) The same string literal does not create new instance of string. (variables reference the same string literal in the string pool)
+    - (Java) `equals()` checks for string's value equality. `==` is true only if two references "point" to the same object
+
+    [Java Example](Java/Strings.java)
 
 [**Back to Top**](#navigation)
 
