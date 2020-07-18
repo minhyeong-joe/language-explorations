@@ -47,7 +47,7 @@ ROOT
     - [Arrays](#arrays)
     - [Strings](#strings)
     - [Generic Types](#generic-types)
-    - Operator Overloading
+    - [Operator Overloading](#operator-overloading)
     - Exceptions
 
 - [Built-in Data Structures](#built-in-data-structures)
@@ -333,6 +333,38 @@ Common use case: Function that takes different datatypes (saves function overloa
 - **Python / Javascript**
 
     - As datatypes bind dynamically, there's no need of generic type.
+
+[**Back to Top**](#navigation)
+
+---
+
+## Operator Overloading
+
+Operator overloading allows re-define the behavior of built-in operators such as, <<, >> (C++), =, ==, +, - ...
+
+- **C++**
+
+    - Supports operator overloading.
+
+    - [list of overloadable operators](https://en.cppreference.com/w/cpp/language/operators)
+
+    - Use keyword `operator`.
+
+    [**CPP Example**](CPP/OperatorOverloading.cpp)
+
+- **Python**
+
+    - Allows operator overloading by overloading methods like `__str__`, `__add__`, `__sub__`, etc
+
+    ![Python overloadable operators](assets/python_op_overload.png)
+    [Image Source](https://www.programiz.com/python-programming/operator-overloading)
+
+    [**Python Example**](Python/OpOverload.py)
+
+- **Java / Javascript**
+
+    - Does not support operator overloading.
+    - (JS) prototypes can be modified, but discouraged.
 
 [**Back to Top**](#navigation)
 
