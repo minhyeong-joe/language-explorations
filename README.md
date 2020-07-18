@@ -46,7 +46,7 @@ ROOT
     - [Higher-Order For Loops](#higher-order-for-loops)
     - [Arrays](#arrays)
     - [Strings](#strings)
-    - Generic Types
+    - [Generic Types](#generic-types)
     - Operator Overloading
     - Exceptions
 
@@ -99,7 +99,7 @@ ROOT
     }
     ```
 
-    [Java Example](Java/ForLoops.java)
+    [**Java Example**](Java/ForLoops.java)
 
 - **Python**
 
@@ -137,7 +137,7 @@ ROOT
         print(index, value)
     ```
 
-    [Python Example](Python/for-loop.py)
+    [**Python Example**](Python/for-loop.py)
 
 - **Javascript**
 
@@ -161,6 +161,8 @@ ROOT
         console.log(element)
     }
     ```
+
+    [**Javascript Example**](Javascript/for-loop.js)
 
 [**Back to Top**](#navigation)
 
@@ -191,7 +193,7 @@ ROOT
 
         *reduce's advantage execution policy requires tbb dependency*
 
-    [higherOrderForLoop.cpp](CPP/higherOrderForLoop.cpp)
+    [**CPP Example**](CPP/higherOrderForLoop.cpp)
 
 - **Java**
 
@@ -207,7 +209,7 @@ ROOT
 
     and `Arrays` class has `stream` method to convert any array into `Stream`
 
-    [HigherOrderForLoop.java](Java/HigherOrderForLoop.java)
+    [**Java Example**](Java/HigherOrderForLoop.java)
 
 - **Python**
 
@@ -216,7 +218,7 @@ ROOT
     - `filter(function, list)`
     - `reduce(function, list, accumulator)`
 
-    [higherOrderForLoop.py](Python/higherOrderForLoop.py)
+    [**Python Example**](Python/higherOrderForLoop.py)
 
 - **Javascript**
 
@@ -230,7 +232,7 @@ ROOT
 
     [MDN Array Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-    [Javascript Example](Javascript/higherOrderForLoop.js)
+    [**Javascript Example**](Javascript/higherOrderForLoop.js)
 
 [**Back to Top**](#navigation)
 
@@ -247,7 +249,7 @@ Array is a collection, or a list, of items.
     - No warning for out of range (simply access/modify the data in that memory block)
     - Not really an object, merely placed in contiguous memory blocks
 
-    [CPP Example](CPP/Array.cpp)
+    [**CPP Example**](CPP/Array.cpp)
 
 - **Java**
 
@@ -256,7 +258,7 @@ Array is a collection, or a list, of items.
     - Throws `ArrayIndexOutOfBoundsException` when trying to access beyond initial size
     - `java.util.Arrays` provides array methods
 
-    [Java Example](Java/Array.java)
+    [**Java Example**](Java/Array.java)
 
 - **Python**
     
@@ -270,7 +272,7 @@ Array is a collection, or a list, of items.
     - list comprehension (ex. `[x for x in list if x > 5]`)
     - list methods (ex. `append()`, `insert()`, `extend()`, `pop()`, `remove()`, `sort()`, `reverse()`, etc)
 
-    [Python Exampe](Python/Array.py)
+    [**Python Example**](Python/Array.py)
 
 - **Javascript**
 
@@ -292,7 +294,7 @@ Array is a collection, or a list, of items.
     - string is simply a safe wrapper for C-string, so is mutable.
     - string library overloads `+` as concatenation and provides useful methods.
 
-    [CPP Example](CPP/Strings.cpp)
+    [**CPP Example**](CPP/Strings.cpp)
 
 - **Java / Python / Javascript**
 
@@ -300,7 +302,37 @@ Array is a collection, or a list, of items.
     - (Java) The same string literal does not create new instance of string. (variables reference the same string literal in the string pool)
     - (Java) `equals()` checks for string's value equality. `==` is true only if two references "point" to the same object
 
-    [Java Example](Java/Strings.java)
+    [**Java Example**](Java/Strings.java)
+
+[**Back to Top**](#navigation)
+
+---
+
+## Generic Types
+
+Generic types allow reusability of code using different datatypes.
+
+Common use case: Function that takes different datatypes (saves function overloading for each datatype), User-defined class or data structures.
+
+- **C++**
+
+    - Uses template.
+
+    - Behind the scene, C++ macro creates class/function automatically for each datatypes, including user-defined datatypes.
+
+    [**CPP Example**](CPP/GenericType.cpp)
+
+- **Java**
+
+    - Allows compile-time type safe check. If the generic code has, for example, "==" comparison, it will not compile, as some types do not support "==" operator.
+
+    [**Java Example**](Java/GenericType.java)
+    
+    [**User-defined Generic Datatype**](Java/Node.java)
+
+- **Python / Javascript**
+
+    - As datatypes bind dynamically, there's no need of generic type.
 
 [**Back to Top**](#navigation)
 
