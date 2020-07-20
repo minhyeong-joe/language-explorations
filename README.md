@@ -374,6 +374,28 @@ Operator overloading allows re-define the behavior of built-in operators such as
 
 ---
 
+## Dynamic-sized Array
+
+- **C++**
+
+    - Using STL `std::vector`: vector also provides useful array methods.
+
+    [**CPP Example**](CPP/DynamicArray.cpp)
+
+- **Java**
+
+    - Using `java.util.List` implementations such as `java.util.ArrayList`
+
+    [**Java Example**](Java/DynamicArray.java)
+
+- **Python / Javascript**
+
+    - The built-in list/array itself is dynamic sized, and do not require additional library.
+
+[**Back to Top**](#navigation)
+
+---
+
 ## Procedural
 
 ---
