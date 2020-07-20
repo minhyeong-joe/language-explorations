@@ -51,7 +51,7 @@ ROOT
     - [Exceptions](#exceptions)
 
 - [Built-in Data Structures](#built-in-data-structures)
-    - Dynamic-sized Array
+    - [Dynamic-sized Array](#dynamic-sized-array)
     - Set
     - Stack
     - Queue
