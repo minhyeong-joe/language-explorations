@@ -52,7 +52,7 @@ ROOT
 
 - [Built-in Data Structures](#built-in-data-structures)
     - [Dynamic-sized Array](#dynamic-sized-array)
-    - Set
+    - [Set](#set)
     - Stack
     - Queue
     - Map/Dictionary
@@ -431,6 +431,28 @@ A caller can try a function that throws exceptions, and catch those exceptions a
 - **Python / Javascript**
 
     - The built-in list/array itself is dynamic sized, and do not require additional library.
+
+[**Back to Top**](#navigation)
+
+---
+
+## Set
+
+Set is a collection of unique data (main trait: does not allow duplicates).
+
+- **C++**
+
+    - By default, sorted unless using `unordered_set`.
+
+    - `set` has underlying binary search tree, so `std::set::find` is more efficient than generic `std::find`.
+
+    [**CPP Example**](CPP/Set.cpp)
+
+- **Java**
+
+- **Python / Javascript**
+
+- **Javascript**
 
 [**Back to Top**](#navigation)
 
