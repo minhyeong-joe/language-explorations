@@ -48,7 +48,7 @@ ROOT
     - [Strings](#strings)
     - [Generic Types](#generic-types)
     - [Operator Overloading](#operator-overloading)
-    - Exceptions
+    - [Exceptions](#exceptions)
 
 - [Built-in Data Structures](#built-in-data-structures)
     - Dynamic-sized Array
@@ -365,6 +365,46 @@ Operator overloading allows re-define the behavior of built-in operators such as
 
     - Does not support operator overloading.
     - (JS) prototypes can be modified, but discouraged.
+
+[**Back to Top**](#navigation)
+
+---
+
+## Exceptions
+
+Exceptions are thrown when program runs into an error, or a condition that programmer considers as an exception. (ie. DividedByZero, IndexOutOfBounds...)
+
+A caller can try a function that throws exceptions, and catch those exceptions and perform differently based on the exception thrown. (Or program terminates with exception)
+
+- **C++**
+
+    - `throw`, `try`, `catch`
+    - Can throw any data type.
+    - Unchecked Exceptions only.
+    - `<stdexcept>` includes some standard exception objects.
+
+    [**CPP Example**](CPP/Exceptions.cpp)
+
+- **Java**
+
+    - `throw`, `try`, `catch`, `finally`
+    - Only throw Throwable Object (like implementations of Exception or Error).
+    - Checked and Unchecked Exceptions. [Explanation](https://www.tutorialspoint.com/Checked-vs-Unchecked-exceptions-in-Java)
+
+    [**Java Example**](Java/Exceptions.java)
+
+- **Python**
+
+    - `raise`, `try`, `except` , `else`, `finally`
+
+    [**Python Example**](Python/Exceptions.py)
+
+- **Javascript**
+
+    - `throw`, `try`, `catch`, `finally`
+    - Can throw any data type.
+
+    [**Javascript Example**](Javascript/Exceptions.js)
 
 [**Back to Top**](#navigation)
 
