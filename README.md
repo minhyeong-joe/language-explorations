@@ -443,16 +443,38 @@ Set is a collection of unique data (main trait: does not allow duplicates).
 - **C++**
 
     - By default, sorted unless using `unordered_set`.
-
     - `set` has underlying binary search tree, so `std::set::find` is more efficient than generic `std::find`.
 
     [**CPP Example**](CPP/Set.cpp)
 
 - **Java**
 
-- **Python / Javascript**
+    - `Set` is merely an interface in Java.
+    - Commonly used implementations of `Set` interface:
+        1. `HashSet`: Not sorted, order is undefined.
+        2. `LinkedHashSet`: Retains order as elements are inserted (ordered by insertion order).
+        3. `TreeSet`: Sorted. Uses self-balancing tree structure internally.
+    - Easy to perform set operations (intersection, union, difference) using `retainAll()`, `addAll()`, `removeAll()` respectively.
+    
+    [**Java Example**](Java/Sets.java)
+
+- **Python**
+
+    - Can be initialized using either `{}` or `set()` constructor.
+
+    - Python's set is unordered.
+
+    - Even easier than Java to perform set operations as Python provides built-in methods for set operations: `intersection()`, `union()`, `difference()`, `symmetric_difference()`, etc.
+
+    [**Python Example**](Python/Set.py)
 
 - **Javascript**
+
+    - Initialized using `Set()` constructor.
+    - Retains the insertion order.
+    - Does not have built-in Set operations, but can be implemented using `has()`, `add()`, `delete()`.
+
+    [**Javascript**](Javascript/Set.js)
 
 [**Back to Top**](#navigation)
 
