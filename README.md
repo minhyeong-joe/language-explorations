@@ -53,7 +53,7 @@ ROOT
 - [Built-in Data Structures](#built-in-data-structures)
     - [Dynamic-sized Array](#dynamic-sized-array)
     - [Set](#set)
-    - Stack
+    - [Stack](#stack)
     - Queue
     - Map/Dictionary
     - Hashtable
@@ -475,6 +475,30 @@ Set is a collection of unique data (main trait: does not allow duplicates).
     - Does not have built-in Set operations, but can be implemented using `has()`, `add()`, `delete()`.
 
     [**Javascript**](Javascript/Set.js)
+
+[**Back to Top**](#navigation)
+
+---
+
+## Stack
+
+Stack is a LIFO (Last-In-First-Out) data structure. Some applications are: undo feature, balance check, etc.
+
+- **C++**
+
+    - STL provides `<stack>`.
+
+    [**CPP Example**](CPP/Stack.cpp)
+
+- **Java**
+
+    - `java.util.Stack` (implements Iterable, Collection, List)
+    
+    [**Java Example**](Java/StackExample.java)
+
+- **Python/Javascript**
+
+    - Do not have separate built-in stack, but array (list) has stack methods, so the array (list) can be used as a stack.
 
 [**Back to Top**](#navigation)
 
