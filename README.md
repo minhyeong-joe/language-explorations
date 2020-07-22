@@ -54,7 +54,7 @@ ROOT
     - [Dynamic-sized Array](#dynamic-sized-array)
     - [Set](#set)
     - [Stack](#stack)
-    - Queue
+    - [Queue](#queue)
     - Map/Dictionary
     - Hashtable
 
@@ -70,8 +70,6 @@ ROOT
     - Encapsulation
     - Inheritance
     - Polymorphism
-
-    ... More to Come
 
 ---
 
@@ -500,6 +498,30 @@ Stack is a LIFO (Last-In-First-Out) data structure. Some applications are: undo 
 
     - Do not have separate built-in stack, but array (list) has stack methods, so the array (list) can be used as a stack.
 
+[**Back to Top**](#navigation)
+
+---
+
+## Queue
+
+Queue is a FIFO (First-In-First-Out) data structure. Some applications are: Task Scheduler, print task queue, call center service queue, etc. 
+
+- **C++**
+
+    - STL provides `<queue>` (also includes priority queue).
+    - No examples as similar syntax is used as [Stack](#stack)
+
+- **Java**
+
+    - `java.util.Queue` interface
+    - Commonly used Queue classes are `java.util.LinkedList` and `java.util.PriorityQueue`
+    - No Example as similar syntax is used as [Stack](#stack)
+
+- **Python/Javascript**
+
+    - Do not have separate built-in queue.
+    - (Python) Though simple lists can do the job, it also includes `deque` from `collections` module and `queue` from `Queue` module.
+ 
 [**Back to Top**](#navigation)
 
 ---
