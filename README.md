@@ -55,7 +55,7 @@ ROOT
     - [Set](#set)
     - [Stack](#stack)
     - [Queue](#queue)
-    - Map/Dictionary
+    - [Map/Dictionary](#mapdictionary)
     - Hashtable
 
 - [Procedural](#procedural)
@@ -521,6 +521,47 @@ Queue is a FIFO (First-In-First-Out) data structure. Some applications are: Task
 
     - Do not have separate built-in queue.
     - (Python) Though simple lists can do the job, it also includes `deque` from `collections` module and `queue` from `Queue` module.
+ 
+[**Back to Top**](#navigation)
+
+---
+
+## Map/Dictionary
+
+Map, or Dictionary, is a key-value pair data structure. Instead of using index as in array, in Map/Dictionary, one can access value using key.
+
+Generally implemented with Hashtable, so hasing, inserting, accessing all take ~O(1).
+
+- **C++**
+
+    - `map`: sorted using binary tree structure. O(log N) operations
+    - `unordered_map`: unsorted and uses Hashtable. O(1) operations.
+    - insert pair using either `make_pair(K key, V val)` or `pair<K, V>(key, val)`
+    - access key using `iterator->first`, value using `iterator->second`
+    
+    [**C++ Example**](CPP/MapExample.cpp)
+
+- **Java**
+
+    - `java.util.Map` interface
+        1. `java.util.HashMap`: Unsorted, but fastest operations compared to the other two.
+        2. `java.util.LinkedHashMap`: sorted in insertion order.
+        3. `java.util.TreeMap`: sorted by key.
+
+    [**Java Example**](Java/MapExample.java) 
+
+- **Python**
+
+    - initialize using `dict()` constructor or `{}`.
+    - keys can be of different types.
+    
+    [**Python Example**](Python/DictExample.py)
+
+- **Javascript**
+
+    - Javascript uses object as dictionary.
+    - No separate built-in map or dictionary.
+    - Javascript's object is an unordered, associative structure.
  
 [**Back to Top**](#navigation)
 
