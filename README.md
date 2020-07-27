@@ -56,7 +56,7 @@ ROOT
     - [Stack](#stack)
     - [Queue](#queue)
     - [Map/Dictionary](#mapdictionary)
-    - Hashtable
+    - [Hashtable](#hashtable)
 
 - [Procedural](#procedural)
     - [Pass By Value vs Reference](#pass-by-value-vs-reference)
@@ -562,6 +562,22 @@ Generally implemented with Hashtable, so hasing, inserting, accessing all take ~
     - Javascript uses object as dictionary.
     - No separate built-in map or dictionary.
     - Javascript's object is an unordered, associative structure.
+ 
+[**Back to Top**](#navigation)
+
+---
+
+## Hashtable
+
+- **Java**
+
+    - `java.util.Hashtable` is similar to `HashMap`, but different in the following:
+        1. Hashtable is synchronized, thus thread-safe.
+        2. Hashtable does not allow null key nor values.
+
+- **C++/Python**
+
+    - Their Map and Dictionary can be used as Hashtable.
  
 [**Back to Top**](#navigation)
 
