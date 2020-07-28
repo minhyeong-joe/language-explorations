@@ -60,7 +60,7 @@ ROOT
 
 - [Procedural](#procedural)
     - [Pass By Value vs Reference](#pass-by-value-vs-reference)
-    - Lambda Functions
+    - [Lambda Functions](#lambda-functions)
     - Callback Functions
     - Default Parameters
     - Function Overloading
@@ -593,13 +593,56 @@ Generally implemented with Hashtable, so hasing, inserting, accessing all take ~
 
     C++ passes arguments by both value and reference, and the programmer has the freedom to make a choice based on the requirement.
 
-    [C++ Example](CPP/pass-by.cpp)
+    [**C++ Example**](CPP/pass-by.cpp)
 
 - **Java/ Python/ Javascript**
 
     Uses pass-by-value, but when passing an object, the reference to the object is passed as value, allowing the object mutation. (This is also called as `pass-by-object-reference`)
 
-    [Python Example](Python/pass-by.py)
+    [**Python Example**](Python/pass-by.py)
+
+[**Back to Top**](#navigation)
+
+---
+
+## Lambda Functions
+
+Lambda functions are generally used as anonymous function without function name.
+
+It can be useful when the function is one-time use or used as callback for another function.
+
+- **C++**
+
+    - Basic syntax: `[capture] (params) -> return-type { definition body }`
+    - return-type is optional
+    - capture types:
+        - `[&]`: capture all external variable by reference
+        - `[=]`: capture all external variable by value
+        - `[a, &b]`: capture `a` by value and `b` by reference
+        - `[]`: access to local variables only
+
+    [**C++ Example**](CPP/lambda-function.cpp)
+
+- **Java**
+
+    - Basic syntax: `(params) -> { definition body }`
+    - Lambda expression implements the functional interface based on the matching parameters.
+
+    [**Java Example**](Java/LambdaFunctions.java)
+
+- **Python**
+
+    - Basic syntax: `lambda params:body`
+
+    [**Python Example**](Python/lambda-function.py)
+
+- **Javascript**
+
+    - Javascript doesn't have separate syntax. Same syntax as declaring a function.
+    - Pre-ES6: `function(params) { body }`
+    - ES6 syntax: `(params) => { body }`
+
+    [**Javascript Example**](Javascript/lambda-function.js)
 
 [**Back to Top**](#navigation)
 
